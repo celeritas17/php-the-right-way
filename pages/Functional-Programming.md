@@ -39,6 +39,7 @@ $output = array_filter($input, function($item) {
 });
 
 print_r($output);
+?>
 {% endhighlight %}
 
 A closure is an anonymous function that can access variables imported from the outside scope without using any global
@@ -68,6 +69,7 @@ $input = array(1, 2, 3, 4, 5, 6);
 $output = array_filter($input, criteria_greater_than(3));
 
 print_r($output); // items > 3
+?>
 {% endhighlight %}
 
 Each filter function in the family accepts only elements greater than some minimum value. Single filter returned by 
